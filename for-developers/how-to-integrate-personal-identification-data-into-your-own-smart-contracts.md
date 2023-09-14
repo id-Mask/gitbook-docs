@@ -1,6 +1,6 @@
 # ⛏ How to integrate personal identification data into your own smart contracts?
 
-
+Ideally, you'd set up your own zkOracle to fetch data from Smart-ID backend :smile:. But don't worry, we've got you covered. Follow the steps below to fetch the data and use it inside your own smart contract.
 
 ```javascript
 const get_oracle_signature = (name, surname, country, pno) => {
