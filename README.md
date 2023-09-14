@@ -16,6 +16,10 @@ Produced proofs can be utilized by other parties that find it useful, for exampl
 Currently only people from the Baltic states can produce proofs. Personal identification data is streamlined using [Smart-ID](https://www.smart-id.com/) app.
 {% endhint %}
 
+{% hint style="info" %}
+📢 If you know apps other than Smart-ID that can help properly streamline personal identification data, please reach out. We're on the lookout for apps in other parts of the world that can help us provide the same functionality.
+{% endhint %}
+
 ## How can I use it?
 
 Visit the app and follow to instructions to create proofs. Currently, users are able to create three proofs:
