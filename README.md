@@ -17,12 +17,12 @@ Currently only people from the Baltic states can produce proofs. Personal identi
 {% endhint %}
 
 {% hint style="info" %}
-📢 If you know apps other than Smart-ID that can help properly streamline personal identification data, please reach out. We're on the lookout for apps in other parts of the world that can help us provide the same functionality.
+📢 We're on the lookout for apps in other parts of the world that can help us provide the same functionality. If you know apps other than Smart-ID that can help properly streamline personal identification data from citizens in other countries, please reach out.&#x20;
 {% endhint %}
 
-## How can I use it?
+## How can I use it and what proofs can I produce?
 
-Visit the app and follow to instructions to create proofs. Currently, users are able to create three proofs:
+Visit the app and follow to instructions to create proofs. The following proofs are available:
 
 1. 🏛️ Proof of non-sanctions
 2. 👴 Proof of adulthood
