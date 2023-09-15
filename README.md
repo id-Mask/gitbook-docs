@@ -6,7 +6,7 @@ description: What is it, what can I use it for?
 
 
 
-**idMask** is an app that allows users to prove statements about themselves and do not share any personal information except for the proof. Users can link their proofs to their blockchain address (optional).
+**idMask** is an app that enables the creation of zero-knowledge proofs, empowering individuals to verify statements about their identity to third parties without disclosing any personal information.
 
 Produced proofs can be utilized by other parties that find it useful, for example other apps, governments, DEX'es and what not. For more check [How to consume proofs?](for-developers/how-to-consume-proofs.md)
 
