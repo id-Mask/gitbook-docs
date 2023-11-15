@@ -9,3 +9,4 @@
 
 * [⛏ How to integrate personal identification data into your own smart contracts?](for-developers/how-to-integrate-personal-identification-data-into-your-own-smart-contracts.md)
 * [💼 How to consume proofs?](for-developers/how-to-consume-proofs.md)
+* [🔮 zkOracle](for-developers/zkoracle.md)
