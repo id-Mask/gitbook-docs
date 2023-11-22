@@ -7,6 +7,6 @@
 
 ## For developers
 
-* [⛏ How to integrate personal identification data into your own smart contracts?](for-developers/how-to-integrate-personal-identification-data-into-your-own-smart-contracts.md)
+* [⛏ Integrating Smart-ID provided personal identification data into zkApps](for-developers/integrating-smart-id-provided-personal-identification-data-into-zkapps.md)
 * [💼 How to consume proofs?](for-developers/how-to-consume-proofs.md)
 * [🔮 zkOracle](for-developers/zkoracle.md)
