@@ -2,7 +2,7 @@
 
 ## Check if user provided JSON proof is valid
 
-<pre class="language-javascript"><code class="lang-javascript">import { verify } from 'o1js';
+<pre class="language-javascript"><code class="lang-javascript">import { verify } from 'o1js'
 import { proofOfAge } from './ProofOfAge.js'
 <strong>
 </strong><strong>// this is a user supplied JSON proof
@@ -11,9 +11,9 @@ import { proofOfAge } from './ProofOfAge.js'
 </strong><strong>  publicOutput: ["1"],
 </strong><strong>  maxProofsVerified: 0,
 </strong><strong>  proof: "KChzdGF...KSkpKSkp"
-</strong><strong>};
-</strong><strong>const { verificationKey } = proofOfAge.compile();
-</strong><strong>let isProofValid = await verify(proof, verificationKey);
+</strong><strong>}
+</strong><strong>const { verificationKey } = proofOfAge.compile()
+</strong><strong>let isProofValid = await verify(proof, verificationKey)
 </strong><strong>
 </strong><strong>console.log(
 </strong><strong>  `Is proof valid? ${isProofValid}`,
