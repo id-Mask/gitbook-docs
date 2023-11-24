@@ -50,10 +50,37 @@ To fetch real personal data follow the example provided below. Keep in mind that
 // prepare input data
 const url = 'https://id-mask-oracle-2qz4wkdima-uc.a.run.app/'
 const body = {
-  pno: 39911110000, // personal idintification number
+  pno: 34204108221, // personal idintification number
   country: 'EE', // country of citizenship
   displayText: '🙋, this is zkApp requesting your data 🙌' // message to be shown on user's phone
 }
+```
+
+```javascript
+// get session data
+const sessionData = await fetch(url + 'initiateSession', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(body),
+})
+const sessionData_ = await sessionData.json()
+
+// check verification code
+console.log(`Verification code on users mobile: ${sessionData_.verificationCode}`)
+
+// get peronal identification data
+const response = await fetch(url + 'getData', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(sessionData_),
+})
+
+const response_ = await response.json()
+console.log(response_)
 ```
 
 ```json
