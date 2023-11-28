@@ -6,7 +6,7 @@
 
 ## Integrating Smart-ID provided personal identification data into zkApps
 
-Ideally, you'd set up your own zkOracle to fetch data from Smart-ID backend :smile:. But don't worry, I've got you covered. Follow the steps below to fetch the data and use it inside your own smart contract.
+Follow the steps below to fetch the data and use it inside your own smart contract.
 
 ### Mock data
 
@@ -28,15 +28,15 @@ console.log(response_)
 ```json
 {
   "data": {
-    "name": "Spruce",
-    "surname": "Ouse",
-    "country": "EE",
-    "pno": "PNOEE-34204108221",
-    "currentDate": "2023-11-22"
+    "name": "Douglas",
+    "surname": "Springclean",
+    "country": "LV",
+    "pno": "PNOLV-56507022581",
+    "currentDate": 20231128
   },
   "signature": {
-    "r": "13321981410189637427210129143013654176766761390896169413813228709629380683341",
-    "s": "19215708859877984477029527137419056491967878259437001340192969029580449858462"
+    "r": "11624374872413079570738404457399910526826583697231105175070815741369504895452",
+    "s": "1363230429367483560421055409858563811811972473922881490971709844227493053902"
   },
   "publicKey": "B62qmXFNvz2sfYZDuHaY5htPGkx1u2E2Hn3rWuDWkE11mxRmpijYzWN"
 }
@@ -44,7 +44,7 @@ console.log(response_)
 
 ### Real data
 
-To fetch real personal data follow the example provided below. Keep in mind that to do this, you must ask the user to provide valid personal identification code and country of citizenship.&#x20;
+To fetch real personal data follow the example provided below. Keep in mind that to do this, you must ask the user to provide valid personal identification code and country of citizenship and the user must have Smart-ID app and account.&#x20;
 
 ```javascript
 // prepare input data
@@ -86,15 +86,15 @@ console.log(response_)
 ```json
 {
   "data": {
-    "name": "Spruce",
-    "surname": "Ouse",
-    "country": "EE",
-    "pno": "PNOEE-34204108221",
-    "currentDate": "2023-11-22"
+    "name": "Douglas",
+    "surname": "Springclean",
+    "country": "LV",
+    "pno": "PNOLV-56507022581",
+    "currentDate": 20231128
   },
   "signature": {
-    "r": "13321981410189637427210129143013654176766761390896169413813228709629380683341",
-    "s": "19215708859877984477029527137419056491967878259437001340192969029580449858462"
+    "r": "11624374872413079570738404457399910526826583697231105175070815741369504895452",
+    "s": "1363230429367483560421055409858563811811972473922881490971709844227493053902"
   },
   "publicKey": "B62qmXFNvz2sfYZDuHaY5htPGkx1u2E2Hn3rWuDWkE11mxRmpijYzWN"
 }
@@ -107,15 +107,15 @@ const { PublicKey, Signature, CircuitString } = require('o1js')
 
 const data = {
   "data": {
-    "name": "Spruce",
-    "surname": "Ouse",
-    "country": "EE",
-    "pno": "PNOEE-34204108221",
-    "currentDate": "2023-11-22"
+    "name": "Douglas",
+    "surname": "Springclean",
+    "country": "LV",
+    "pno": "PNOLV-56507022581",
+    "currentDate": 20231128
   },
   "signature": {
-    "r": "13321981410189637427210129143013654176766761390896169413813228709629380683341",
-    "s": "19215708859877984477029527137419056491967878259437001340192969029580449858462"
+    "r": "11624374872413079570738404457399910526826583697231105175070815741369504895452",
+    "s": "1363230429367483560421055409858563811811972473922881490971709844227493053902"
   },
   "publicKey": "B62qmXFNvz2sfYZDuHaY5htPGkx1u2E2Hn3rWuDWkE11mxRmpijYzWN"
 }
@@ -126,7 +126,7 @@ const validSignature = signature.verify(PublicKey.fromBase58(data.publicKey), [
   ...CircuitString.fromString(data.data.surname).toFields(),
   ...CircuitString.fromString(data.data.country).toFields(),
   ...CircuitString.fromString(data.data.pno).toFields(),
-  ...CircuitString.fromString(data.data.currentDate).toFields(),
+  Field(data.data.currentDate),
 ])
 
 console.log(`Is signature valid? ${validSignature.toBoolean()}`)

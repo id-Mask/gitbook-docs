@@ -2,6 +2,8 @@
 
 ## Check if user provided JSON proof is valid
 
+Source code of proofs are stored [here](https://github.com/id-Mask/smart-contracts/tree/main/src).
+
 <pre class="language-javascript"><code class="lang-javascript">import { verify } from 'o1js'
 import { proofOfAge } from './ProofOfAge.js'
 <strong>
@@ -17,7 +19,7 @@ import { proofOfAge } from './ProofOfAge.js'
 </strong><strong>
 </strong><strong>console.log(
 </strong><strong>  `Is proof valid? ${isProofValid}`,
-</strong><strong>  `Proof of age > ${proof.publicInput[0]}`
+</strong><strong>  `Proof of age of at least ${proof.publicInput[0]} years`
 </strong><strong>)
 </strong></code></pre>
 
