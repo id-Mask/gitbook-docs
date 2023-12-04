@@ -8,8 +8,10 @@ The proof source code is stored in this [repository](https://github.com/id-Mask/
 npm i idmask-zk-programs
 ```
 
+To verify user provided JSON proof:
+
 <pre class="language-javascript"><code class="lang-javascript">import { verify } from 'o1js'
-import { proofOfAge, ProofOfAge } from 'idmask-zk-programs'
+import { proofOfAge } from 'idmask-zk-programs'
 <strong>
 </strong><strong>// this is a user supplied JSON proof
 </strong><strong>const proof = {
