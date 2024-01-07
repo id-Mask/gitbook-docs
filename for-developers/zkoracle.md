@@ -2,7 +2,7 @@
 
 ## Swagger Docs UI
 
-[https://id-mask-oracle-2qz4wkdima-uc.a.run.app/api-docs/](https://id-mask-oracle-2qz4wkdima-uc.a.run.app/api-docs/)
+[https://id-mask-oracle-e6ngsd55oa-uc.a.run.app/api-docs/](https://id-mask-oracle-e6ngsd55oa-uc.a.run.app/api-docs/)
 
 ## Integrating Smart-ID provided personal identification data into zkApps
 
@@ -13,7 +13,7 @@ Follow the steps below to fetch the data and use it inside your own smart contra
 For testing purposes use mock data provider. It does not require real personal identification number and data request approval by the user. This is useful for testing environment and quick prototyping.
 
 ```javascript
-const url = 'https://id-mask-oracle-2qz4wkdima-uc.a.run.app/'
+const url = 'https://id-mask-oracle-e6ngsd55oa-uc.a.run.app/'
 const response = await fetch(url + 'getSmartIDMockData', {
   method: 'GET',
   headers: {
@@ -44,11 +44,15 @@ console.log(response_)
 
 ### Real data
 
-To fetch real personal data follow the example provided below. Keep in mind that to do this, you must ask the user to provide valid personal identification code and country of citizenship and the user must have Smart-ID app and account.&#x20;
+To fetch real personal data follow the example provided below. Keep in mind that to do this, you must ask the user to provide valid personal identification code and country of citizenship.
+
+{% hint style="info" %}
+In order to fetch read data of a person, the individual must have installed and set up the Smart-ID app and account on their mobile device.
+{% endhint %}
 
 ```javascript
-// prepare input data
-const url = 'https://id-mask-oracle-2qz4wkdima-uc.a.run.app/'
+ // prepare input data
+const url = 'https://id-mask-oracle-e6ngsd55oa-uc.a.run.app/'
 const body = {
   pno: 34204108221, // personal idintification number
   country: 'EE', // country of citizenship
