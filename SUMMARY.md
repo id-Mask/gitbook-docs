@@ -2,10 +2,8 @@
 
 ## Intro
 
-* [🦰 What is id-Mask?](README.md)
-* [📃 Project proposal](intro/project-proposal.md)
+* [🦰 What is ID-Mask?](README.md)
 
 ## For developers
 
 * [✅ How to consume proofs?](for-developers/how-to-consume-proofs.md)
-* [🔮 zkOracle](for-developers/zkoracle.md)
