@@ -18,7 +18,7 @@ This app brings real-world utility to privacy-first identity verification.
 
 ***
 
-{% embed url="https://youtu.be/EeZaGC74DDk" %}
+{% embed url="https://youtu.be/EeZaGC74DDk?si=ZX6PJn3YUxqXwEdP" %}
 
 ## Preventing Proof Sharing
 
