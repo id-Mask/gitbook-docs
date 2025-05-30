@@ -18,6 +18,8 @@ This app brings real-world utility to privacy-first identity verification.
 
 ***
 
+{% embed url="https://youtu.be/EeZaGC74DDk" %}
+
 ## Preventing Proof Sharing
 
 A key challenge with zero-knowledge proofs is preventing them from being **shared and reused by others**. For example, someone could attempt to use their older sibling’s proof of age to falsely claim they are over 21.
