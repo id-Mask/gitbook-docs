@@ -1,8 +1,20 @@
 # ✅ How to consume proofs?
 
-## Check if user provided JSON proof is valid
+## ☑️ Easiest & Most Reliable Way: Use the ID-Mask App
 
-The proof source code is stored in this [repository](https://github.com/id-Mask/smart-contracts/tree/main/src), and all the necessary utilities are bundled in an [npm package](https://www.npmjs.com/package/idmask-zk-programs). To install the package, follow these steps:
+The recommended way to consume proofs is through the [**ID-Mask app**](https://idmask.xyz):
+
+1. Open [idmask.xyz](https://idmask.xyz) on your device. Go to 'Verify' > 'QR Code'.
+2. Optionally **precompile** the proofs you're about to consume in the settings.
+3. Use the **built-in scanner** to scan the user’s **pass QR code** from their wallet.
+4. The app handles all cryptographic verification **and** ensures the pass actually belongs to the user by checking their **passkey signature**.
+
+This is the only method that guarantees:
+
+* The proof is cryptographically valid.
+* The pass is truly owned by the person presenting it.
+
+## &#x20;🧑‍💻 Advanced: Programmatic Proof Verification
 
 ```bash
 npm i idmask-zk-programs
@@ -16,11 +28,11 @@ import { proofOfAge } from 'idmask-zk-programs'
 </strong><strong>// this is a user supplied JSON proof
 </strong><strong>const proof = {
 </strong><strong>  publicInput: ["21"],
-</strong><strong>  publicOutput: ["1"],
+</strong><strong>  publicOutput: [...],
 </strong><strong>  maxProofsVerified: 0,
 </strong><strong>  proof: "KChzdGF...KSkpKSkp"
 </strong><strong>}
-</strong><strong>const { verificationKey } = proofOfAge.compile()
+</strong><strong>const { verificationKey } = await proofOfAge.compile()
 </strong><strong>const isProofValid = await verify(proof, verificationKey)
 </strong><strong>
 </strong><strong>console.log(
@@ -29,7 +41,7 @@ import { proofOfAge } from 'idmask-zk-programs'
 </strong><strong>)
 </strong></code></pre>
 
-## Check if provided public address has an associated proof
+## &#x20;🧑‍💻 Advanced: Check if provided public address has an associated proof
 
 ```javascript
 // user Mina address
