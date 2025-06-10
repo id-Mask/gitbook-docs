@@ -24,7 +24,7 @@ This app brings real-world utility to privacy-first identity verification.
 
 A key challenge with zero-knowledge proofs is preventing them from being **shared and reused by others**. For example, someone could attempt to use their older sibling’s proof of age to falsely claim they are over 21.
 
-To solve this, our app embeds a **passkey pair** into each proof at creation time. These passkeys are cryptographic credentials unique to the user and device.
+To solve this, we use **active auth**. The app embeds a **passkey pair** into each proof at creation time. These passkeys are cryptographic credentials unique to the user and device.
 
 Inside the zero-knowledge circuit, a **signature using this passkey pair** is verified. As a result, the **public key** (or a pointer to it) becomes part of the proof's **public output**.
 
