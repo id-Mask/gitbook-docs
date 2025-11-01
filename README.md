@@ -4,7 +4,7 @@
 
 This app empowers users to create **zero-knowledge proofs (ZKPs)** about themselves—secure, privacy-preserving attestations that reveal nothing beyond the fact being proven.
 
-Built with a strong focus on **client-side operations**, the app fetches personal data using **Smart-ID** directly in the browser. This data is then passed into **predefined zero-knowledge circuits** to generate cryptographic proofs entirely on the user's device.
+Built with a focus on **client-side operations**, the app fetches personal data using **Smart-ID** directly in the browser. This data is then passed into **predefined zero-knowledge circuits** to generate cryptographic proofs entirely on the user's device.
 
 {% hint style="info" %}
 Currently only people from the Baltic states can produce proofs. Personal identification data is streamlined using [Smart-ID](https://www.smart-id.com/) app.
@@ -13,8 +13,6 @@ Currently only people from the Baltic states can produce proofs. Personal identi
 Users can store these proofs in their **Google Wallet**, **Apple Wallet**, or publish them on the **Mina Protocol L1** blockchain.
 
 When needed, users present their proof via a **QR code**. The proof verifier sees only the specific fact (e.g., "I am over 18")—**no additional personal data is exposed**.
-
-This app brings real-world utility to privacy-first identity verification.
 
 ***
 
